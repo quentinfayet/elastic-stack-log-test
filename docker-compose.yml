@@ -41,3 +41,7 @@ services:
       - "8080:80"
     depends_on:
       - elasticsearch
+  tools:
+    build:
+      context: .
+      dockerfile: docker/tools/Dockerfile

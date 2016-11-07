@@ -24,6 +24,16 @@ Logs location: /var/log/logstash
 
 Website to help building Grok patterns: http://grokconstructor.appspot.com/
 
+## Tools
+
+Container that handles tooling.
+
+**stressing nginx:**
+
+```
+docker-compose run tools /bin/bash
+siege -c10 -t15s http://nginx
+```
 
 ## Improvements
 
