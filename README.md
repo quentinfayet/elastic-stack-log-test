@@ -14,6 +14,8 @@ Logs location: /var/log/filebeat
 
 Logs location: /var/log/logstash
 
+Website to help building Grok patterns: http://grokconstructor.appspot.com/
+
 
 ## Improvements
 

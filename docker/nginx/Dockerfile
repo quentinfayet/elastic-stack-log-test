@@ -14,6 +14,8 @@ RUN echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" > /etc/
 
 COPY docker/nginx/config/filebeat/filebeat.yml /etc/filebeat/filebeat.yml
 
+COPY docker/nginx/config/nginx.conf /etc/nginx/nginx.conf
+
 COPY docker/nginx/start.sh /usr/local/bin/start.sh
 
 RUN chmod +x /usr/local/bin/start.sh

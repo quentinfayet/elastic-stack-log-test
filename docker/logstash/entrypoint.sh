@@ -10,8 +10,6 @@ curl --user elastic:changeme -XPOST 'http://elasticsearch:9200/_xpack/security/u
 
 sleep 5
 
-ls /opt/logstash/patterns
-
 # Add logstash as command if needed
 if [ "${1:0:1}" = '-' ]; then
 	set -- logstash "$@"
