@@ -1,0 +1,9 @@
+{
+  "cluster": ["manage_index_templates", "monitor"],
+  "indices": [
+    {
+      "names": [ "filebeat-*" ],
+      "privileges": ["write","delete","create_index"]
+    }
+  ]
+}

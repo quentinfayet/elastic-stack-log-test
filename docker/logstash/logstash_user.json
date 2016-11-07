@@ -1,0 +1,5 @@
+{
+  "password" : "changeme",
+  "roles" : [ "filebeat_writer"],
+  "full_name" : "Logstash User"
+}
