@@ -1,5 +1,13 @@
 # This readme is a draft
 
+Run
+
+```
+sudo sysctl -w vm.max_map_count=262144 &&
+mkdir .data &&
+sudo chmod 777 .data
+```
+
 ## Filebeat
 
 **test configuration**
@@ -19,4 +27,4 @@ Website to help building Grok patterns: http://grokconstructor.appspot.com/
 
 ## Improvements
 
-- replace `sleep`s in start scripts with `netcat` checks
+- replace `sleep`s in start scripts with `netcat` checks (or find even better way)
