@@ -1,3 +1,5 @@
+# This readme is a draft
+
 ## Filebeat
 
 **test configuration**
@@ -11,3 +13,8 @@ Logs location: /var/log/filebeat
 ## Logtsash
 
 Logs location: /var/log/logstash
+
+
+## Improvements
+
+- replace `sleep`s in start scripts with `netcat` checks
