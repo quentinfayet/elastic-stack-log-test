@@ -8,6 +8,8 @@ sleep 20
 curl --user elastic:changeme -XPOST 'http://elasticsearch:9200/_xpack/security/role/filebeat_writer' -d @/roles/filebeat_writer.json
 curl --user elastic:changeme -XPOST 'http://elasticsearch:9200/_xpack/security/user/logstash' -d @/logstash_user.json
 
+sleep 5
+
 # Add logstash as command if needed
 if [ "${1:0:1}" = '-' ]; then
 	set -- logstash "$@"
